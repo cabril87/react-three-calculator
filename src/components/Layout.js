@@ -9,7 +9,7 @@ const Layout = () => {
     const [calculations, setCalculations] = useState("")
 
     const handleClick = (e) => {
-        setCalculations(calculations.concat(e.eventObject.name))
+        setCalculations(calculations + e.eventObject.name)
     }
     const clear = () => {
         setCalculations("")

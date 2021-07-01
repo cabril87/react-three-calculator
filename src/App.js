@@ -9,7 +9,7 @@ const App = () => {
       <Canvas
         camera={{ position: [0, 0, 10], far: 40 }}
         flat
-        gl={{ antialias: false, alpha: false }}
+        gl={{ antialias: true, alpha: false }}
       >
         <pointLight position={[20, 25, 12]} intensity={4} />
         <ambientLight intensity={0.1} />
