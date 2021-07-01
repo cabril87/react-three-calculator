@@ -8,23 +8,22 @@ import { evaluate } from "mathjs";
 const Layout = () => {
     const [calculations, setCalculations] = useState("")
 
+
     const handleClick = (e) => {
         setCalculations(calculations + e.eventObject.name)
     }
+
     const clear = () => {
         setCalculations("")
     }
-    const backspace = () => {
-        try {
 
-            setCalculations(calculations.slice(0, calculations.length - 1))
-        } catch (err) {
-            setCalculations('')
-        }
+    const backspace = () => {
+        setCalculations(calculations.slice(0, calculations.length - 1))
     }
+
     const calculate = () => {
         try {
-            setCalculations((ex) => evaluate(ex))
+            setCalculations(evaluate(calculations))
         } catch (err) {
             setCalculations('Error')
         }
