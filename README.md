@@ -10,7 +10,7 @@
 
 ## Deployed Site
 ---
-Deployed Website: https://todo-react-2.herokuapp.com/
+Deployed Website: https://react-three-calculator.herokuapp.com/
 
 ## User Story
 User Story: 

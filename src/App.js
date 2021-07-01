@@ -5,14 +5,18 @@ import './App.css';
 
 const App = () => {
   return (
-    <>
-      <Canvas>
+    <div className='App'>
+      <Canvas
+        camera={{ position: [0, 0, 10], far: 40 }}
+        flat
+        gl={{ antialias: false, alpha: false }}
+      >
         <pointLight position={[20, 25, 12]} intensity={4} />
         <ambientLight intensity={0.1} />
         <OrbitControls />
         <Layout />
       </Canvas>
-    </>
+    </div >
   );
 }
 
